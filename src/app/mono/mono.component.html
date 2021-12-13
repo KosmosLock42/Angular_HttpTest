@@ -1,0 +1,36 @@
+<h1>CAV Weather App</h1>
+
+<h2>La tua città, le tue previsioni adesso</h2>
+
+<h3>Previsioni Correnti</h3>
+
+<div class="form-group">
+  <label for="location">City</label>
+  <input
+    type="text"
+    class="form-control"
+    name="location"
+    [(ngModel)]="location"
+  />
+</div>
+
+<div class="form-group">
+<button type="button" (click)="getData()">Invia</button>
+
+</div>
+
+
+<div class="output" >
+<span>{{data.name}}</span>
+<p>{{data.country}}<p>
+<span></span>
+
+<br>
+
+<span>{{data.deg}}</span>
+<span>{{data.description}}</span>
+<span>{{data.icon}}</span>
+
+
+
+</div>
